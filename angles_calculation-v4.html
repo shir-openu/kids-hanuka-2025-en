@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>חישוב זוויות</title>
+<title>Angle Calculations</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -185,7 +185,7 @@
     font-size: 16px;
     color: #92400e;
     display: none;
-    text-align: right;
+    text-align: left;
   }
 
   .hint-box.show {
@@ -238,145 +238,152 @@
   .success-msg.show {
     display: block;
   }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 14px;
+  }
 </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="title">חישוב זוויות</div>
+  <div class="title">Angle Calculations</div>
 
-  <!-- שאלה 1 -->
+  <!-- Question 1 -->
   <div class="exercise">
-    <div class="exercise-title">שאלה 1</div>
+    <div class="exercise-title">Question 1</div>
 
     <div class="drawing-container">
-      <img src="q1_drawing.svg" alt="שרטוט שאלה 1">
+      <img src="q1_drawing.svg" alt="Question 1 diagram">
     </div>
 
     <div class="given-box">
-      <div><strong>נתון:</strong> <span class="math-expr">∠A₁ = ∠A₂ = ∠A₃ = 20°</span>, וב-E מסומן 75°</div>
-      <div>היעזרו בנתונים שבשרטוט וחשבו את הזוויות:</div>
+      <div><strong>Given:</strong> <span class="math-expr">&#8736;A&#8321; = &#8736;A&#8322; = &#8736;A&#8323; = 20&deg;</span>, and at E it is marked 75&deg;</div>
+      <div>Use the information in the diagram to calculate the angles:</div>
     </div>
 
     <div class="questions-grid">
       <div class="question-item" id="q1a-item">
-        <div class="question-label">א.</div>
-        <span class="math-expr">∠ADE = </span>
-        <input type="text" class="answer-input" id="q1a" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q1a', 55)">בדוק</button>
+        <div class="question-label">a.</div>
+        <span class="math-expr">&#8736;ADE = </span>
+        <input type="text" class="answer-input" id="q1a" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q1a', 55)">Check</button>
         <div class="hint-box" id="hint-q1a"></div>
-        <div class="success-msg" id="success-q1a">✓ נכון!</div>
+        <div class="success-msg" id="success-q1a">&#10003; Correct!</div>
       </div>
       <div class="question-item" id="q1b-item">
-        <div class="question-label">ב.</div>
-        <span class="math-expr">∠ACD = </span>
-        <input type="text" class="answer-input" id="q1b" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q1b', 35)">בדוק</button>
+        <div class="question-label">b.</div>
+        <span class="math-expr">&#8736;ACD = </span>
+        <input type="text" class="answer-input" id="q1b" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q1b', 35)">Check</button>
         <div class="hint-box" id="hint-q1b"></div>
-        <div class="success-msg" id="success-q1b">✓ נכון!</div>
+        <div class="success-msg" id="success-q1b">&#10003; Correct!</div>
       </div>
       <div class="question-item" id="q1c-item">
-        <div class="question-label">ג.</div>
-        <span class="math-expr">∠ABC = </span>
-        <input type="text" class="answer-input" id="q1c" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q1c', 15)">בדוק</button>
+        <div class="question-label">c.</div>
+        <span class="math-expr">&#8736;ABC = </span>
+        <input type="text" class="answer-input" id="q1c" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q1c', 15)">Check</button>
         <div class="hint-box" id="hint-q1c"></div>
-        <div class="success-msg" id="success-q1c">✓ נכון!</div>
+        <div class="success-msg" id="success-q1c">&#10003; Correct!</div>
       </div>
     </div>
   </div>
 
-  <!-- שאלה 2 -->
+  <!-- Question 2 -->
   <div class="exercise">
-    <div class="exercise-title">שאלה 2</div>
+    <div class="exercise-title">Question 2</div>
 
     <div class="drawing-container">
-      <img src="q2_drawing.svg" alt="שרטוט שאלה 2">
+      <img src="q2_drawing.svg" alt="Question 2 diagram">
     </div>
 
     <div class="given-box">
-      <div>היעזרו בנתונים שבשרטוט וחשבו את הזוויות:</div>
+      <div>Use the information in the diagram to calculate the angles:</div>
     </div>
 
     <div class="questions-grid">
       <div class="question-item" id="q2a-item">
-        <div class="question-label">א.</div>
-        <span class="math-expr">∠CAD = </span>
-        <input type="text" class="answer-input" id="q2a" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q2a', 20)">בדוק</button>
+        <div class="question-label">a.</div>
+        <span class="math-expr">&#8736;CAD = </span>
+        <input type="text" class="answer-input" id="q2a" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q2a', 20)">Check</button>
         <div class="hint-box" id="hint-q2a"></div>
-        <div class="success-msg" id="success-q2a">✓ נכון!</div>
+        <div class="success-msg" id="success-q2a">&#10003; Correct!</div>
       </div>
       <div class="question-item" id="q2b-item">
-        <div class="question-label">ב.</div>
-        <span class="math-expr">∠ABE = </span>
-        <input type="text" class="answer-input" id="q2b" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q2b', 20)">בדוק</button>
+        <div class="question-label">b.</div>
+        <span class="math-expr">&#8736;ABE = </span>
+        <input type="text" class="answer-input" id="q2b" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q2b', 20)">Check</button>
         <div class="hint-box" id="hint-q2b"></div>
-        <div class="success-msg" id="success-q2b">✓ נכון!</div>
+        <div class="success-msg" id="success-q2b">&#10003; Correct!</div>
       </div>
       <div class="question-item" id="q2c-item">
-        <div class="question-label">ג.</div>
-        <span class="math-expr">∠BFD = </span>
-        <input type="text" class="answer-input" id="q2c" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q2c', 70)">בדוק</button>
+        <div class="question-label">c.</div>
+        <span class="math-expr">&#8736;BFD = </span>
+        <input type="text" class="answer-input" id="q2c" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q2c', 70)">Check</button>
         <div class="hint-box" id="hint-q2c"></div>
-        <div class="success-msg" id="success-q2c">✓ נכון!</div>
+        <div class="success-msg" id="success-q2c">&#10003; Correct!</div>
       </div>
       <div class="question-item" id="q2d-item">
-        <div class="question-label">ד.</div>
-        <span class="math-expr">∠DFE = </span>
-        <input type="text" class="answer-input" id="q2d" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q2d', 110)">בדוק</button>
+        <div class="question-label">d.</div>
+        <span class="math-expr">&#8736;DFE = </span>
+        <input type="text" class="answer-input" id="q2d" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q2d', 110)">Check</button>
         <div class="hint-box" id="hint-q2d"></div>
-        <div class="success-msg" id="success-q2d">✓ נכון!</div>
+        <div class="success-msg" id="success-q2d">&#10003; Correct!</div>
       </div>
     </div>
   </div>
 
-  <!-- שאלה 3 -->
+  <!-- Question 3 -->
   <div class="exercise">
-    <div class="exercise-title">שאלה 3</div>
+    <div class="exercise-title">Question 3</div>
 
     <div class="drawing-container">
-      <img src="q3_drawing.svg" alt="שרטוט שאלה 3">
+      <img src="q3_drawing.svg" alt="Question 3 diagram">
     </div>
 
     <div class="given-box">
-      <div><strong>נתון:</strong> משולש שווה-שוקיים <span class="math-expr">AB = AC</span>, זוויות בסיס 64°</div>
-      <div>AK חוצה את <span class="math-expr">∠DAC</span></div>
+      <div><strong>Given:</strong> Isosceles triangle <span class="math-expr">AB = AC</span>, base angles 64&deg;</div>
+      <div>AK bisects <span class="math-expr">&#8736;DAC</span></div>
     </div>
 
     <div class="questions-grid">
       <div class="question-item" id="q3a-item">
-        <div class="question-label">א.</div>
-        <span class="math-expr">∠BAC = </span>
-        <input type="text" class="answer-input" id="q3a" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q3a', 52)">בדוק</button>
+        <div class="question-label">a.</div>
+        <span class="math-expr">&#8736;BAC = </span>
+        <input type="text" class="answer-input" id="q3a" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q3a', 52)">Check</button>
         <div class="hint-box" id="hint-q3a"></div>
-        <div class="success-msg" id="success-q3a">✓ נכון!</div>
+        <div class="success-msg" id="success-q3a">&#10003; Correct!</div>
       </div>
       <div class="question-item" id="q3b-item">
-        <div class="question-label">ב.</div>
-        <span class="math-expr">∠DAC = </span>
-        <input type="text" class="answer-input" id="q3b" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q3b', 128)">בדוק</button>
+        <div class="question-label">b.</div>
+        <span class="math-expr">&#8736;DAC = </span>
+        <input type="text" class="answer-input" id="q3b" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q3b', 128)">Check</button>
         <div class="hint-box" id="hint-q3b"></div>
-        <div class="success-msg" id="success-q3b">✓ נכון!</div>
+        <div class="success-msg" id="success-q3b">&#10003; Correct!</div>
       </div>
       <div class="question-item" id="q3c-item">
-        <div class="question-label">ג.</div>
-        <span class="math-expr">∠KAC = </span>
-        <input type="text" class="answer-input" id="q3c" placeholder="?" maxlength="4">°
-        <br><button class="check-btn" onclick="checkAnswer('q3c', 64)">בדוק</button>
+        <div class="question-label">c.</div>
+        <span class="math-expr">&#8736;KAC = </span>
+        <input type="text" class="answer-input" id="q3c" placeholder="?" maxlength="4">&deg;
+        <br><button class="check-btn" onclick="checkAnswer('q3c', 64)">Check</button>
         <div class="hint-box" id="hint-q3c"></div>
-        <div class="success-msg" id="success-q3c">✓ נכון!</div>
+        <div class="success-msg" id="success-q3c">&#10003; Correct!</div>
       </div>
       <div class="question-item" id="q3d-item">
-        <div class="question-label">ד. הוכח: BC || AK</div>
+        <div class="question-label">d. Prove: BC || AK</div>
         <div class="proof-box">
-          <span class="math-expr">∠KAC = ∠ACB = 64°</span><br>
-          זוויות מתחלפות שוות → ישרים מקבילים
+          <span class="math-expr">&#8736;KAC = &#8736;ACB = 64&deg;</span><br>
+          Alternate interior angles are equal &rarr; lines are parallel
         </div>
       </div>
     </div>
@@ -386,18 +393,20 @@
 
 <div class="celebration" id="celebration"></div>
 
+<footer>&copy; Developed by Shir Sivroni</footer>
+
 <script>
 const hints = {
-  'q1a': ['∠ADE ו-∠ADB הן זוויות על ישר', 'זוויות סמוכות על ישר סכומן 180°', 'חשבו: 180° - 125° = ?'],
-  'q1b': ['הסתכלו על משולש ACD', 'סכום זוויות במשולש = 180°', '∠CAD = 20°, ∠ADC = 125°'],
-  'q1c': ['הסתכלו על משולש ABC', '∠BAC = 60° (שלושה פעמים 20°)', 'סכום זוויות במשולש = 180°'],
-  'q2a': ['AD מחלק את זווית A', 'הסתכלו על הזווית בין AC ל-AD', '∠CAD הוא חלק מ-∠BAC'],
-  'q2b': ['הסתכלו על משולש ABD', '∠ADB = 90° (זווית ישרה)', 'סכום זוויות במשולש = 180°'],
-  'q2c': ['F היא נקודת חיתוך', 'הסתכלו על משולש BFD', 'השתמשו בזוויות שכבר מצאתם'],
-  'q2d': ['∠BFD ו-∠DFE הן זוויות סמוכות', 'זוויות על ישר סכומן 180°', '180° - ∠BFD = ?'],
-  'q3a': ['במשולש שווה-שוקיים זוויות הבסיס שוות', 'סכום זוויות במשולש = 180°', '180° - 64° - 64° = ?'],
-  'q3b': ['∠DAC היא זווית חיצונית', 'זווית חיצונית + זווית פנימית = 180°', '180° - ∠BAC = ?'],
-  'q3c': ['AK חוצה את ∠DAC', 'חוצה = מחלק לשני חלקים שווים', '∠DAC ÷ 2 = ?']
+  'q1a': ['&#8736;ADE and &#8736;ADB are angles on a line', 'Adjacent angles on a line sum to 180&deg;', 'Calculate: 180&deg; - 125&deg; = ?'],
+  'q1b': ['Look at triangle ACD', 'Sum of angles in a triangle = 180&deg;', '&#8736;CAD = 20&deg;, &#8736;ADC = 125&deg;'],
+  'q1c': ['Look at triangle ABC', '&#8736;BAC = 60&deg; (three times 20&deg;)', 'Sum of angles in a triangle = 180&deg;'],
+  'q2a': ['AD divides angle A', 'Look at the angle between AC and AD', '&#8736;CAD is part of &#8736;BAC'],
+  'q2b': ['Look at triangle ABD', '&#8736;ADB = 90&deg; (right angle)', 'Sum of angles in a triangle = 180&deg;'],
+  'q2c': ['F is the intersection point', 'Look at triangle BFD', 'Use the angles you already found'],
+  'q2d': ['&#8736;BFD and &#8736;DFE are adjacent angles', 'Angles on a line sum to 180&deg;', '180&deg; - &#8736;BFD = ?'],
+  'q3a': ['In an isosceles triangle, base angles are equal', 'Sum of angles in a triangle = 180&deg;', '180&deg; - 64&deg; - 64&deg; = ?'],
+  'q3b': ['&#8736;DAC is an exterior angle', 'Exterior angle + interior angle = 180&deg;', '180&deg; - &#8736;BAC = ?'],
+  'q3c': ['AK bisects &#8736;DAC', 'Bisects = divides into two equal parts', '&#8736;DAC &divide; 2 = ?']
 };
 
 let attempts = {};
@@ -428,10 +437,10 @@ function checkAnswer(id, correct) {
     setTimeout(() => input.classList.remove('wrong'), 300);
 
     const hintIndex = Math.min(attempts[id] - 1, hints[id].length - 1);
-    let hintText = '💡 רמז ' + attempts[id] + ': ' + hints[id][hintIndex];
+    let hintText = '💡 Hint ' + attempts[id] + ': ' + hints[id][hintIndex];
 
     if (attempts[id] >= 5) {
-      hintText += '<br>🎯 התשובה הנכונה היא: ' + correct + '°';
+      hintText += '<br>🎯 The correct answer is: ' + correct + '&deg;';
     }
 
     hintBox.innerHTML = hintText;
